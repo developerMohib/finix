@@ -1,0 +1,195 @@
+body,p,span{  
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.btn-primary {
+    background-color: red !important;
+    border-color: red;
+
+    position: relative;
+    z-index: 1;
+}
+.btn-primary::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    border-color:  black;
+    z-index: -1;
+    transition: .3s;
+}
+.btn-primary:hover{
+    border-color:black;
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+.container-fluid{
+    max-width: 1280px;
+}
+
+
+/* Starting CSS */
+
+.navbar-nav li{
+    position: relative;
+}
+.navbar-nav li a {
+    text-decoration: none;
+    padding: 20px 10px;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-nav li ul{
+    position: absolute;
+    top: 240%;
+    left: 0;
+
+    padding: 0;
+    width: 200px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    list-style-type: none;
+    padding: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .4s ease-in-out;
+}
+.navbar-nav li ul li{
+    flex-direction: column;
+ }
+ .navbar-nav li ul li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.navbar-nav li:hover ul{ 
+    opacity: 1;
+    visibility: visible; 
+    top: 200%;
+}
+.navbar-nav li a:hover{
+    color: red;
+}
+.Header-search{
+    border-right: 1px solid rgb(223, 211, 211);
+}
+.Header-search span {
+    font-size: 22px;
+
+}
+.Header-call-phone span {
+    font-size: 30px;
+    color: red;
+}
+.Header-call-number a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.Header-button a {
+    padding: 10px 35px;
+}
+
+/* Slider CSS */
+
+
+.slider{
+    background-image: url(./img/main-banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slider-section{
+    height: 150vh;
+    display: flex;
+    align-items: center;
+}
+.slider-text {
+    
+}
+.slider-text p{
+    color: red;
+}
+.slider-text h2{
+    font-weight: bold;
+}
+
+.slider-section{
+    position: relative;
+}
+.slider-social ul{
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.slider-social ul li{
+    list-style-type: none;
+}
+.slider-social ul li a {
+    padding: 10px;
+}
+
+
+
+
+
+
+.company-img {
+    position: relative;
+}
+.WithText {
+    position: absolute;
+    right: 106px;
+    bottom: 70px;
+}
+.withText-inRoud {
+    position: absolute;
+    right: 136px;
+    bottom: 135px;
+}
+.withText-inRoud h2{
+    color: red;
+}
+
+.comapny-provide ul{
+    margin-left: -30px;
+}
+.comapny-provide ul li{
+    list-style-type: none;
+} 
+.comapny-provide ul li span{
+    width: 30px ;
+}
+.contact{
+    background-color:  red;
+}
+
+.footer{
+    background-color: black;
+}
+.footer-img{
+    color: white;
+}
+.footer-text p{
+    color: white;
+}
+.footer p{
+    color: white;
+}
+.footer ul li a{
+    color: white;
+} 
+.footer-link h2{
+    color: white;
+}
+hr{
+    color: rgb(172, 161, 161);
+}
